@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descuentos</title>
+</head>
+<body>
+    <h1>Calculadora de Descuentos</h1>
+    <form action="Calculadora.php" method="post">
+        <h2>Producto 1:</h2>
+        <label for="nombre1">Nombre del producto:</label>
+        <input type="text" id="nombre1" name="productos[0][nombre]" required><br><br>
+
+        <label for="cantidad1">Cantidad:</label>
+        <input type="number" id="cantidad1" name="productos[0][cantidad]" min="1" required><br><br>
+
+        <label for="precio1">Precio unitario:</label>
+        <input type="number" step="0.01" id="precio1" name="productos[0][precioUnitario]" required><br><br>
+
+        <h2>Producto 2:</h2>
+        <label for="nombre2">Nombre del producto:</label>
+        <input type="text" id="nombre2" name="productos[1][nombre]" required><br><br>
+
+        <label for="cantidad2">Cantidad:</label>
+        <input type="number" id="cantidad2" name="productos[1][cantidad]" min="1" required><br><br>
+
+        <label for="precio2">Precio unitario:</label>
+        <input type="number" step="0.01" id="precio2" name="productos[1][precioUnitario]" required><br><br>
+
+        <h2>Producto 3:</h2>
+        <label for="nombre3">Nombre del producto:</label>
+        <input type="text" id="nombre3" name="productos[2][nombre]" required><br><br>
+
+        <label for="cantidad3">Cantidad:</label>
+        <input type="number" id="cantidad3" name="productos[2][cantidad]" min="1" required><br><br>
+
+        <label for="precio3">Precio unitario:</label>
+        <input type="number" step="0.01" id="precio3" name="productos[2][precioUnitario]" required><br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>
